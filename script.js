@@ -3,11 +3,11 @@ let randomDamage = () => {
 }
 
 let chooseOption = (opt1, opt2) => {
-    let randNum = Math.floor(math.random() * Math.floor(1) + 1);
+    let randNum = Math.floor(Math.random() * Math.floor(1) + 1);
     return randNum === 0 ? opt1 : opt2;
 }
 
-let attackPlayer = function (health) {
+let attackPlayer = function(health) {
     return (`${health}` - `${randomDamage}`);
 }
 
@@ -27,10 +27,10 @@ let isDead = (health) => {
 }
 
 function fight(player1, player2, player1Health, player2Health) {
-    while (i = 1) {
+    while (i = 0) {
     }
     var attacker = (`${chooseOption}`);
-    attacker(player1, player2);
+    chooseOption(player1, player2);
 
     if (`${attacker}` === `${player1}`) {
         player2Health = attackPlayer(player2Health);
@@ -55,4 +55,4 @@ function fight(player1, player2, player1Health, player2Health) {
     }
 }
 
-fight.call('Patrick', 'Alison', 100, 100);
+fight.call("Patrick Johnson", "Alison Bourdon", 10, 10);
